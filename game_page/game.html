@@ -36,13 +36,15 @@
         <!--Menu-->
         <ul class="menu" id="navigation-bar">
             <li><a href="../index.html" class="nav_links">Home</a></li>
-            <li><a href="game_page/game.php" class="nav_links">Game</a></li>
-            <li><a href="#" class="nav_links">Rules</a></li>
-            <li><a href="#" class="nav_links">Tips & Tricks</a></li>
-            <li><a href="#" class="nav_links">About</a></li>
+            <li><a href="../game_page/game.php" class="nav_links">Game</a></li>
+            <li><a href="../pages/rules.html" class="nav_links">Rules</a></li>
+            <li><a href="../pages/tips_tricks.html" class="nav_links">Tips & Tricks</a></li>
+            <li><a href="../pages/about.html" class="nav_links">About</a></li>
         </ul>
 
     </nav>
+
+
 
     <section class="game">
         <!-- 21:9 aspect ratio 
@@ -51,8 +53,49 @@
           </div>-->
 
 
-        <p align="center"><iframe frameBorder="0" class="game-iframe" src="gcode/gcode.html" title="Quantum Owl" style="overflow:auto;">
+        <div id="left" class="table">
+            <table class="styled-table">
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Column 3</th>
+                </tr>
+                <tr>
+                    <td>Cell 1</td>
+                    <td>Cell 2</td>
+                    <td>Cell 3</td>
+                </tr>
+                <tr>
+                    <td>Cell 1</td>
+                    <td>Cell 2</td>
+                    <td>Cell 3</td>
+                </tr>
+                <tr>
+                    <td>Cell 1</td>
+                    <td>Cell 2</td>
+                    <td>Cell 3</td>
+                </tr>
+                <tr>
+                    <td>Cell 1</td>
+                    <td>Cell 2</td>
+                    <td>Cell 3</td>
+                </tr>
+                <tr>
+                    <td>Cell 1</td>
+                    <td>Cell 2</td>
+                    <td>Cell 3</td>
+                </tr>
+            </table>
+
+        </div>
+
+
+
+        <div id="center" class="iframe">
+            <p align="center"><iframe frameBorder="0" class="game-iframe" src="gcode/gcode.html" title="Quantum Owl" style="overflow:auto;">
           </iframe></p>
+        </div>
+
     </section>
 
 
