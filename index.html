@@ -40,14 +40,21 @@
 
         <!--------------------Navigation-------------------->
         <nav class="navigation">
-            <!--Menu-->
+            <!-- decides if the navigation bar is open or not -->
+            <input id="navigation-toggle" type="checkbox">
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="game_page/game.html">Game</a></li>
-                <li><a href="pages/rules.html">Rules</a></li>
-                <li><a href="pages/tips_tricks.html">Tips & Tricks</a></li>
-                <li><a href="pages/about.html">About</a></li>
+                <li> <a href="#home">Home</a></li>
+                <li> <a href="game_page/game.html">Game</a></li>
+                <li> <a href="pages/about.html">About Us</a></li>
+                <li> <a href="pages/rules.html">Rules</a></li>
+                <li> <a href="pages/tips_tricks.html">Tips & Tricks</a></li>
             </ul>
+
+            <label for="navigation-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>   
         </nav>
 
         <!--------------------Logo-------------------->
