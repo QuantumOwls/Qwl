@@ -46,14 +46,14 @@ body {
 }
 
 
-
 /*------------- Navigation ------------*/
-.navigation{
+
+.navigation {
     position: fixed;
     z-index: 10;
     left: 0;
     right: 0;
-    top:15px;
+    top: 15px;
     padding: 0 5%;
     height: 100px;
     display: flex;
@@ -64,7 +64,7 @@ body {
     position: relative;
 }
 
-.menu{
+.menu {
     float: right;
     padding: 0;
     margin: 0;
@@ -73,6 +73,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .menu li a,
 .start-btn {
     margin: 0px 20px;
@@ -118,69 +119,64 @@ body {
     box-shadow: #CC0000 -0px 1px, #CC0000 -0px 2px, #CC0000 -0px 3px, #CC0000 -0px 4px, #CC0000 -0px 5px, #CC0000 -0px 6px, #CC0000 -0px 7px, #CC0000 -0px 8px, #CC0000 -0px 9px, #CC0000 -0px 10px, #CC0000 -0px 11px;
 }
 
-#navigation-toggle{
+#navigation-toggle {
     position: absolute;
-    top:-100px;
+    top: -100px;
 }
 
-.icon-burger{
+.icon-burger {
     display: none;
     position: absolute;
-    right:5%;
+    right: 5%;
     top: 50%;
     transform: translate(-50%);
 }
 
 .icon-burger .line {
-	width: 30px;
-	height: 5px;
-	background-color: #000;
-	margin: 5px;
-	border-radius: 3px;
-	transition: all .3s ease-in-out;
+    width: 30px;
+    height: 5px;
+    background-color: #000;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
 }
 
 @media screen and (max-width: 1000px) {
-    
-    nav .menu{
+    nav .menu {
         float: none;
         position: fixed;
         z-index: 9;
         left: 0;
-        right:0;
-        top:100px;
+        right: 0;
+        top: 100px;
         bottom: 100%;
-        width:auto;
+        width: auto;
         height: auto;
         flex-direction: column;
         justify-content: space-evenly;
-        background-color: rgba(0,0,0,.8);
+        background-color: rgba(0, 0, 0, .8);
         overflow: hidden;
         box-sizing: border-box;
-        transition: all .5s ease-in-out;   
+        transition: all .5s ease-in-out;
     }
-    
-    nav .menu a{
+    nav .menu a {
         font-size: 20px;
     }
-    
-    nav :checked ~ .menu{
+    nav :checked~.menu {
         bottom: 0;
     }
-    
-    nav .icon-burger{
+    nav .icon-burger {
         display: block;
     }
-    
-	nav :checked ~ .icon-burger .line:nth-child(1) {
-		transform: translateY(10px) rotate(225deg);
-	}
-	nav :checked ~ .icon-burger .line:nth-child(3) {
-		transform: translateY(-10px) rotate(-225deg);
-	}
-	nav :checked ~ .icon-burger .line:nth-child(2) {
-		opacity: 0;
-	}	
+    nav :checked~.icon-burger .line:nth-child(1) {
+        transform: translateY(10px) rotate(225deg);
+    }
+    nav :checked~.icon-burger .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-225deg);
+    }
+    nav :checked~.icon-burger .line:nth-child(2) {
+        opacity: 0;
+    }
 }
 
 
@@ -231,8 +227,9 @@ body {
     flex: 1;
 }
 
-#center {
+#game-block {
     flex: 3;
+    transform: translateY(15%);
 }
 
 .embed-responsive-item {
@@ -254,41 +251,15 @@ body {
     width: 90%;
 }
 
-table {
-    width: auto;
-    border-collapse: collapse;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(204, 0, 0);
-}
-
-th,
-td {
-    padding: 15px;
-    background-color: rgba(204, 0, 0);
-    color: #fff;
-}
-
-th {
-    background-color: #003366;
-}
-
-.styled-table {
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    font-family: sans-serif;
-    min-width: auto;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    margin-left: 50;
+#compass-left {
+    object-position: left;
+    transform: translateY(25%);
 }
 
 
 /*------------footer------------*/
 
 footer {
-    /* display: block;
-    padding: 0;
-    text-align: center; */
     position: fixed;
     left: 0;
     bottom: 0;
@@ -299,6 +270,15 @@ footer {
 
 
 /*--------------------Rule Page--------------------*/
+
+ul {
+    padding-left: 10px;
+}
+
+.rules-header {
+    text-align: center;
+    color: rgb(157, 22, 22);
+}
 
 .rules {
     background: #000000d0;
@@ -313,15 +293,15 @@ footer {
     margin-top: 3rem;
 }
 
-.intro{
+.intro {
     margin-top: 2rem;
 }
 
-.init-img{
+.init-img {
     min-width: 300px;
     max-width: 1200px;
-    
 }
+
 
 /*--------------------Tips and Tricks Page--------------------*/
 
@@ -353,16 +333,14 @@ footer {
     margin-top: 3rem;
 }
 
-
-.column-wrapper{
+.column-wrapper {
     display: flex;
     align-items: center;
     margin-top: 80px;
     flex-flow: wrap;
 }
 
-
-.column{
+.column {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -370,28 +348,28 @@ footer {
     margin: 10px;
 }
 
-.team-img{
+.team-img {
     height: 200px;
     width: auto;
     border-radius: 50%;
     border: 2px solid black;
 }
 
-.position{
+.position {
     border-bottom: 4px solid black;
 }
 
-.background{
+.background {
     margin-top: 30px;
-    text-align:left;
+    text-align: left;
     font-size: 13px;
     margin-bottom: 30px;
 }
 
 .socials,
 .fab {
-  display: flex;
-  margin: 10px;
-  color: white;
-  font-size: 20px;
+    display: flex;
+    margin: 10px;
+    color: white;
+    font-size: 20px;
 }
