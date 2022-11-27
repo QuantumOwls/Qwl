@@ -326,7 +326,7 @@ ul {
     padding: 2em;
     border-radius: 30px;
     min-height: 100px;
-    max-width: 900px;
+    max-width: 1200px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -349,21 +349,22 @@ ul {
 }
 
 .team-img {
-    height: 200px;
+    height: 130px;
     width: auto;
     border-radius: 50%;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 .position {
-    border-bottom: 4px solid black;
+    border-bottom: 3px solid black;
+    font-size: 12px;
 }
 
 .background {
-    margin-top: 30px;
+    margin-top: 5px;
     text-align: left;
-    font-size: 13px;
-    margin-bottom: 30px;
+    font-size: 12px;
+    margin-bottom: 5px;
 }
 
 .socials,
@@ -372,4 +373,8 @@ ul {
     margin: 10px;
     color: white;
     font-size: 20px;
+}
+
+.name{
+    font-size: 1rem;
 }
