@@ -12,10 +12,14 @@ ul {
 a {
     text-decoration: none;
 }
-
+html{
+    height: 100%;
+}
 body {
     background-color: #D6E4F0 !important;
     font-family: 'poppins';
+    position: relative;
+    min-height: 100%;
 }
 
 
@@ -256,12 +260,26 @@ body {
     transform: translateY(25%);
 }
 
+.download {
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    min-height: 100px;
+    max-width: 1200px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+}
+
 
 /*------------footer------------*/
 
 footer {
-    position: fixed;
+    position: absolute;
     left: 0;
+    right:0;
     bottom: 0;
     width: 100%;
     color: black;
@@ -300,6 +318,18 @@ ul {
 .init-img {
     min-width: 300px;
     max-width: 1200px;
+}
+
+.links{
+    color: white;
+    margin-left: 40px;
+    
+}
+
+.links:hover{
+    
+    color: rgba(157, 22, 22);
+
 }
 
 
